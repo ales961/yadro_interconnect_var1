@@ -44,6 +44,32 @@ module tb_stream_upsize;
         s_last_i = 0;
         s_valid_i = 0;
         m_ready_i = 1;
+
+        #50;
+        rst_n = 1;
+        @(posedge clk);
+        
+        /*s_valid_i = 1;
+        s_data_i = 4'h0; 
+        @(posedge clk);
+        s_data_i = 4'h1; 
+        @(posedge clk);
+        s_data_i = 4'h2;
+        @(posedge clk);
+        s_data_i = 4'h3;   
+        @(posedge clk);
+        s_data_i = 4'h4;  
+        s_last_i = 1;        
+        @(posedge clk);
+        s_data_i = 4'hA;
+        s_last_i = 0;
+        @(posedge clk);
+        @(posedge clk);
+        s_data_i = 4'hB;
+        s_last_i = 1;    
+        @(posedge clk);
+        s_valid_i = 0;
+        s_last_i = 0;*/
         
         s_valid_i = 1;
         s_data_i = 4'h0; 
